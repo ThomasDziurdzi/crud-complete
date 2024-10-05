@@ -2,7 +2,7 @@ POST http://localhost:3312/api/movies/
 Content-Type: application/json
 
 {
-    "title": "Salut",
+    "title": "Salufsdfsdfsdfsdft",
     "director": "Thomas",
     "release_year": 2032,
     "image": "https://cdn-icons-png.flaticon.com/512/29/29072.png"
