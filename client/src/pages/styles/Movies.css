@@ -1,0 +1,54 @@
+.movie-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5vh;
+        gap: 1rem;
+        width: clamp(280px, 30vw, 380px);
+
+        input {
+            height: 2rem;
+            padding: 0 1rem;
+            background: transparent;
+            outline: none;
+            border: 1px white solid;
+            border-radius: 5px;
+            background: #ffffff36;
+            
+
+            &::placeholder {
+                color: #fff;
+            }
+
+            &::file-selector-button {
+                background: #ffffff36;
+                border: 1px white solid;
+                margin: 5px 5px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+
+        
+
+        button {
+            width: 50%;
+            height: 2rem;
+            align-self: center;
+            background: transparent;
+            color: #fff;
+            border: 1px white solid;
+            border-radius: 5px;
+            cursor: pointer;
+            background: #ffffff36;
+            
+        }
+
+        
+    }
+}
