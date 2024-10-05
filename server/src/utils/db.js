@@ -2,7 +2,7 @@ import sqlite3 from "sqlite3";
 
 sqlite3.verbose();
 
-export const db = new sqlite3.Database("./src/utils/contact.sqlite");
+export const db = new sqlite3.Database("./src/utils/movies.sqlite");
 
 export const initDB = () => {
     const sqlMovies = `

@@ -1,0 +1,30 @@
+POST http://localhost:3312/api/movies/
+Content-Type: application/json
+
+{
+    "title": "Salut",
+    "director": "Thomas",
+    "release_year": 2032,
+    "image": "https://cdn-icons-png.flaticon.com/512/29/29072.png"
+
+}
+
+###
+
+GET http://localhost:3312/api/movies/
+
+###
+
+PUT http://localhost:3312/api/movies/1
+Content-Type: application/json
+
+{
+    "title": "A",
+    "director": "T",
+    "release_year": 1,
+    "image": "https://cdn-icons-png.flaticon.com/512/29/29072.png"
+
+}
+
+###
+DELETE  http://localhost:3312/api/movies/1
