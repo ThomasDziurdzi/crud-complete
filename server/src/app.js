@@ -1,5 +1,6 @@
 import express from "express";
 import dotenv from "dotenv"
+import { initDB } from "./utils/db.js";
 
 dotenv.config();
 
