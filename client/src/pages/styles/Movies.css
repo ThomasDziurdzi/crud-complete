@@ -19,7 +19,6 @@
             border: 1px white solid;
             border-radius: 5px;
             background: #ffffff36;
-            
 
             &::placeholder {
                 color: #fff;
@@ -34,8 +33,6 @@
             }
         }
 
-        
-
         button {
             width: 50%;
             height: 2rem;
@@ -46,9 +43,6 @@
             border-radius: 5px;
             cursor: pointer;
             background: #ffffff36;
-            
         }
-
-        
     }
 }

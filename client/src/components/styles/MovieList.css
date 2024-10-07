@@ -1,0 +1,6 @@
+.movie-list-container {
+    width: clamp(280px, 25vw, 380px);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 1rem;
+}
