@@ -12,9 +12,29 @@
         padding: 1rem;
         display: flex;
         flex-direction: column;
+        align-items: center;
 
         img {
-            width: 200px;
+            height: 200px;
+        }
+
+        .buttons {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+
+            button {
+                padding: 0 1rem;
+                margin: 1rem 0 0 0;
+                height: 2rem;
+                align-self: center;
+                background: transparent;
+                color: #fff;
+                border: 1px white solid;
+                border-radius: 5px;
+                cursor: pointer;
+                background: #ffffff36;
+            }
         }
     }
 }

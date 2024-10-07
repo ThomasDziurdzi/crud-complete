@@ -1,9 +1,17 @@
+import "../pages/styles/Register.css";
+
 export default function Register() {
     return (
-        <form action="submit">
-            <input type="text" placeholder="e-mail" />
-            <input type="text" placeholder="mot de passe"/>
-            <button>Créer un compte</button>
-        </form>
-    )
+        <div className="register-container">
+            <form action="submit">
+                <input type="text" placeholder="E-mail" name="email" />
+                <input type="text" placeholder="Mot de passe" name="password" />
+                <button>Valider</button>
+            </form>
+            <div className="login">
+                <p>Déjà enregistré?</p>
+                <button> Se connecter</button>
+            </div>
+        </div>
+    );
 }

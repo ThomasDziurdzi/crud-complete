@@ -1,6 +1,6 @@
 export default function Form() {
     return (
-        <div className="movie-container">
+        <div className="form-container">
         <form action="submit">
             <input type="text" placeholder="Titre" name="title" />
             <input type="text" placeholder="Réalisateur" name="director" />
