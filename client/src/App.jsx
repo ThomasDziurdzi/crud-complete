@@ -1,13 +1,13 @@
-import "./index.css";
+import { Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Movies from "./pages/Movies";
+import "./index.css";
 
 function App() {
     return (
         <>
             <Navbar />
            <div id="pages">
-                <Movies />
+                <Outlet />
            </div>
         </>
     );
