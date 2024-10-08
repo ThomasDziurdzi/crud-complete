@@ -1,6 +1,6 @@
 import { db } from "../utils/db.js";
 
-export const Movie = {
+export const MovieModel = {
     create: (movie) => {
         const query =
             "INSERT INTO movies (title, director, release_year, image) VALUES (?, ?, ?, ?)";

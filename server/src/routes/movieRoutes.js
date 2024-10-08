@@ -8,7 +8,7 @@ router.post("/", upload.single("image"), movieControllers.createMovie);
 
 router.get("/", movieControllers.readAllMovie);
 
-router.put("/:id", movieControllers.updateMovie);
+router.put("/:id",upload.single("image"), movieControllers.updateMovie);
 
 router.delete("/:id", movieControllers.deleteMovie);
 
