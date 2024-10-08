@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
 import App from "./App.jsx";
-import Register from "./pages/Register.jsx";
-import "./index.css";
 import Movies from "./pages/Movies.jsx";
+import AuthContainer from "./pages/AuthContainer.jsx";
+import ProtectedRoutes from "./components/utils/ProtectedRoutes.jsx";
+import "./index.css";
 
 const router = createBrowserRouter([
     {
@@ -14,12 +14,16 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Register />,
+                element: <AuthContainer />,
             },
             {
                 path: "/movies",
-                element: <Movies />
-            }
+                element: (
+                    <ProtectedRoutes>
+                        <Movies />
+                    </ProtectedRoutes>
+                ),
+            },
         ],
     },
 ]);

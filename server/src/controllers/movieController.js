@@ -23,7 +23,6 @@ export const readAllMovie = async (req, res) => {
 export const updateMovie = async (req, res) => {
     const {id} = req.params;
     const updatedMovie = req.body;
-    console.log(updatedMovie)
     const fileUpload = req.file ? `assets/images/${req.file.filename}` : null
     try {
 
