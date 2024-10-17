@@ -1,7 +1,6 @@
 import multer from "multer";
 import path from "path";
 import { fileURLToPath } from "url";
-
 // Solution pour récupérer __dirname dans les modules ES6
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
